@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Encriptador - Challenge Alura+Oracle</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="" class="alura-logo">
+                    <img src="./assets/img/logo.svg" alt="">
+                </a>
+            </nav>
+        </header>
+        <div class="container-flexbox">
+            <main>
+                <div class="encryptor-container">
+                    <p class="error-message" id="errorMsg"></p>
+                    <textarea class="encryptor-box" name="" id="encryptorBox" cols="75" rows="4" placeholder="Ingrese el texto aqui" maxlength="560"></textarea>
+                    <p class="encryptor-info"><i class="info-icon"><img src="./assets/img/icons/info.svg" alt=""></i>Solo letras minúsculas y sin acentos</p>
+                    <div class="encryptor-buttons-container">
+                        <button class="standard-button dark" id="encryptBtn">Encriptar</button>
+                        <button class="standard-button light" id="decryptBtn">Desencriptar</button>
+                    </div>
+                </div>
+            </main>
+            <aside>
+                <div class="results-container">
+                    <div class="results-wrapper">
+                        <div class="default-results" id="defaultInfo">
+                            <div class="character-container">
+                                <img class="character" src="./assets/img/character.svg" alt="">
+                            </div>
+                            <div class="results-default-container">
+                                <h2 class="default-title">Ningún mensaje fue encontrado</h2>
+                                <p class="default-description">Ingresa el texto que desees encriptar o desencriptar.</p>
+                            </div>
+                        </div>
+                        <div class="results-area hide" id="resultsArea">
+                            <textarea class="results-box" name="" id="resultsBox" cols="30" rows="10" placeholder="" maxlength="350"></textarea>
+                            <button class="standard-button copy-button light" id="copyBtn">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer>
+    
+        </footer>
+    </div>
+    <script src="./js/validator.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
